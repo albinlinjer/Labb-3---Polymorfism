@@ -19,7 +19,8 @@ namespace Labb_3___Polymorfism
             foreach (Geometry shape in shapes)
             {
                 // Polymorfism gör att rätt Area()-metod anropas beroende på objektets typ
-                Console.WriteLine($"Area of {shape.GetType().Name}: {shape.Area()}");
+                // La till "F0" = avrunda till heltal
+                Console.WriteLine($"Area of {shape.GetType().Name}: {shape.Area():F0}");
             }
         }
     }
